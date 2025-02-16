@@ -15,7 +15,7 @@ export const options = {
   },
 };
 // Base URL of the Gerrit instance
-const BASEURL = 'http://192.168.193.148:30306';
+const BASEURL = 'http://192.168.122.200:8080';
 // Helper function to authenticate (if needed)
 function authenticate() {
     let authUrl = `${BASEURL}/a/accounts/self/detail`;
