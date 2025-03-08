@@ -4,7 +4,8 @@ import { check, sleep } from 'k6';
 // Test configuration
 export let options = {
     vus: 1, // Number of virtual users
-    duration: "1m", // Test duration
+//    duration: "1m", // Test duration
+    Iterations: 1
 };
 
 // Base URL of the Gerrit instance
@@ -34,6 +35,17 @@ function list_projects() {
     check(res, {
         'authenticated successfully': (r) => r.status === 200,
     });
+    // Remove the unwanted prefix
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();;
+
+    // Parse the cleaned response body as JSON
+    let jsonData;
+    try {
+      jsonData = JSON.parse(cleanedBody);
+    } catch (e) {
+      console.error('Error parsing JSON:', e);
+    }
+    return jsonData;
 }
 
 export function getChanges(project = null, status = null) {
@@ -49,8 +61,18 @@ export function getChanges(project = null, status = null) {
     if (status) {
       params['status'] = status;
     }
-    let response = http.get(`${BASEURL}/a/changes/`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/`, params);
+    // Remove the unwanted prefix                             
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();;    
+                                                                                      
+    // Parse the cleaned response body as JSON                          
+    let jsonData;                                       
+    try {                                                    
+      jsonData = JSON.parse(cleanedBody);   
+    } catch (e) {                                             
+      console.error('Error parsing JSON:', e);
+    }
+    return jsonData;
 }
 
 export function getChange(changeId) {
@@ -60,8 +82,18 @@ export function getChange(changeId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}`, params);
+    // Remove the unwanted prefix                             
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();;    
+                                                                                      
+    // Parse the cleaned response body as JSON                          
+    let jsonData;                                       
+    try {                                                    
+      jsonData = JSON.parse(cleanedBody);   
+    } catch (e) {                                             
+      console.error('Error parsing JSON:', e);
+    }
+    return jsonData;
 }
 
 export function getChangeComments(changeId) {
@@ -71,8 +103,18 @@ export function getChangeComments(changeId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}/comments`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}/comments`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();              
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getChangeRevisions(changeId) {
@@ -82,8 +124,18 @@ export function getChangeRevisions(changeId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}/revisions`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}/revisions`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();;              
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getChangeRevisionDetail(changeId, revisionId) {
@@ -93,8 +145,18 @@ export function getChangeRevisionDetail(changeId, revisionId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}/revisions/${revisionId}`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}/revisions/${revisionId}`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();              
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getChangeFiles(changeId) {
@@ -104,8 +166,18 @@ export function getChangeFiles(changeId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}/files`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}/files`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();          
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getChangeDrafts(changeId) {
@@ -115,8 +187,18 @@ export function getChangeDrafts(changeId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}/drafts`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}/drafts`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();        
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getChangeLabels(changeId) {
@@ -126,8 +208,18 @@ export function getChangeLabels(changeId) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/changes/${changeId}/labels`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/changes/${changeId}/labels`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();           
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getProjects() {
@@ -137,8 +229,18 @@ export function getProjects() {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/projects/`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/projects/`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();            
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 
 export function getProjectDetails(projectName) {
@@ -148,8 +250,18 @@ export function getProjectDetails(projectName) {
             'Authorization': 'Basic YWRtaW46YWRtaW4=',
         },
     };
-    let response = http.get(`${BASEURL}/a/projects/${projectName}`, params);
-    return response.json();
+    let res = http.get(`${BASEURL}/a/projects/${projectName}`, params);
+    // Remove the unwanted prefix                                                     
+    const cleanedBody = res.body.replace(")]}'", "").replace(/\r?\n|\r/g, "").trim();              
+                                                           
+    // Parse the cleaned response body as JSON               
+    let jsonData;                                                       
+    try {                                                               
+      jsonData = JSON.parse(cleanedBody);                               
+    } catch (e) {                                                       
+      console.error('Error parsing JSON:', e);                          
+    }                                                                   
+    return jsonData;
 }
 // Function to create a new change
 function createChange() {
