@@ -1,0 +1,38 @@
+cluster> start
+Creating deployment...
+Created deployment "stress-cpu-c".
+
+cluster> Average CPU: 76.0%	 Average memory: 25.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.0%	 Average memory: 24.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.2%	 Average memory: 22.9%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.0%	 Average memory: 24.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.2%	 Average memory: 24.5%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.3%	 Average memory: 22.0%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 19.9%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 18.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.5%	 Average memory: 15.9%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 18.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+
+cluster> stop
+stopping test deployment...
+Deployment stress-cpu-c deleted successfully

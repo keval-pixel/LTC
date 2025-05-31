@@ -1,0 +1,58 @@
+cluster> start
+Creating deployment...
+Created deployment "stress-cpu-b".
+
+cluster> Average CPU: 38.1%	 Average memory: 12.7%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-cpu-b to 2 replicas
+Average CPU: 71.9%	 Average memory: 18.2%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-cpu-b to 3 replicas
+Average CPU: 97.2%	 Average memory: 29.3%
+decreasing number of replicas by 1
+Successfully scaled deployment stress-cpu-b to 2 replicas
+Average CPU: 77.8%	 Average memory: 24.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 23.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 21.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 17.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.7%	 Average memory: 19.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.3%	 Average memory: 18.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 19.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 18.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 23.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 24.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 23.9%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 24.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 25.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.3%	 Average memory: 25.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 23.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2

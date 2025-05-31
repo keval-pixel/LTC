@@ -1,0 +1,44 @@
+cluster> start
+Creating deployment...
+Created deployment "memory-tests-a".
+
+cluster> Average CPU: 99.9%	 Average memory: 10.7%
+Increasing number of replicas by 5
+Successfully scaled deployment memory-tests-a to 6 replicas
+Average CPU: 100.0%	 Average memory: 23.7%
+Increasing number of replicas by 5
+Successfully scaled deployment memory-tests-a to 11 replicas
+Average CPU: 100.0%	 Average memory: 33.8%
+Increasing number of replicas by 5
+Successfully scaled deployment memory-tests-a to 16 replicas
+Average CPU: 100.0%	 Average memory: 48.4%
+Increasing number of replicas by 5
+Successfully scaled deployment memory-tests-a to 21 replicas
+Average CPU: 100.0%	 Average memory: 60.4%
+Increasing number of replicas by 3
+Successfully scaled deployment memory-tests-a to 24 replicas
+Average CPU: 100.0%	 Average memory: 67.8%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+Average CPU: 100.0%	 Average memory: 69.0%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+Average CPU: 100.0%	 Average memory: 65.3%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+Average CPU: 100.0%	 Average memory: 70.1%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+Average CPU: 100.0%	 Average memory: 68.4%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+Average CPU: 100.0%	 Average memory: 70.4%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+Average CPU: 100.0%	 Average memory: 67.7%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 24
+
+cluster> stop
+stopping test deployment...
+Deployment memory-tests-a deleted successfully

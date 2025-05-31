@@ -1,0 +1,67 @@
+# 2
+Select the metric to be monitored on the target server [CPU/Memory]: cpu
+Select the target cpu utilization [1-100]%: 80
+Select the feedback time in seconds [10-60]: 15
+Run on Kubernetes or K6 [default: K6]: kubernetes
+Provide a deployment name: gerrit-realistic-a
+Provide the container image: kevalvisnu/k6:test_complete-1vu
+Press enter to start the test
+
+Creating deployment...
+Created deployment "gerrit-realistic-a".
+
+Starting gerrit-realistic-a cluster Test. Available commands are:
+1.start
+2.status <optional: pod_name>
+3.increase <optional: increase_step>
+4.decrease <optional: decrease_step>
+5.stop
+6.exit
+
+
+cluster> Average CPU: 24.8%	 Average memory: 12.1%
+Increasing number of replicas by 2
+Successfully scaled deployment gerrit-realistic-a to 3 replicas
+
+cluster> Average CPU: 47.3%	 Average memory: 13.0%
+Increasing number of replicas by 2
+Successfully scaled deployment gerrit-realistic-a to 5 replicas
+Average CPU: 56.6%	 Average memory: 16.0%
+Increasing number of replicas by 2
+Successfully scaled deployment gerrit-realistic-a to 7 replicas
+
+cluster> Average CPU: 56.2%	 Average memory: 16.5%
+Increasing number of replicas by 2
+Successfully scaled deployment gerrit-realistic-a to 9 replicas
+Average CPU: 57.5%	 Average memory: 16.8%
+Increasing number of replicas by 3
+Successfully scaled deployment gerrit-realistic-a to 12 replicas
+Average CPU: 74.7%	 Average memory: 18.1%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 13 replicas
+Average CPU: 74.4%	 Average memory: 22.1%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 14 replicas
+Average CPU: 71.4%	 Average memory: 23.6%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 15 replicas
+Average CPU: 86.8%	 Average memory: 23.6%
+decreasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 14 replicas
+Average CPU: 72.7%	 Average memory: 23.6%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 15 replicas
+Average CPU: 84.2%	 Average memory: 24.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 15
+Average CPU: 83.0%	 Average memory: 24.5%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 15
+Average CPU: 76.3%	 Average memory: 24.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 15
+
+cluster> stop
+stopping test deployment...
+Deployment gerrit-realistic-a deleted successfully
+

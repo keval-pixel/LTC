@@ -1,0 +1,45 @@
+cluster> start
+Creating deployment...
+Created deployment "stress-memory-c".
+
+cluster> Average CPU: 100.0%	 Average memory: 23.4%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 2 replicas
+Average CPU: 100.0%	 Average memory: 37.2%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 3 replicas
+Average CPU: 100.0%	 Average memory: 61.7%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 4 replicas
+Average CPU: 100.0%	 Average memory: 66.0%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 4
+Average CPU: 100.0%	 Average memory: 70.3%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 4
+Average CPU: 100.0%	 Average memory: 69.7%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 4
+Average CPU: 100.0%	 Average memory: 68.0%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 4
+Average CPU: 100.0%	 Average memory: 66.2%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 4
+Average CPU: 100.0%	 Average memory: 67.3%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 4
+Average CPU: 100.0%	 Average memory: 64.1%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 5 replicas
+Average CPU: 100.0%	 Average memory: 65.2%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 5
+Average CPU: 100.0%	 Average memory: 55.0%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 6 replicas
+
+cluster> stop
+stopping test deployment...
+Deployment stress-memory-c deleted successfully
+

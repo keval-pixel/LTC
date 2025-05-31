@@ -1,0 +1,58 @@
+cluster> start
+Creating deployment...
+Created deployment "get-tests-a".
+
+cluster> Average CPU: 1.9%	 Average memory: 28.9%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 6 replicas
+Average CPU: 9.1%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 11 replicas
+Average CPU: 17.4%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 16 replicas
+Average CPU: 24.0%	 Average memory: 28.9%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 21 replicas
+Average CPU: 28.7%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 26 replicas
+Average CPU: 37.0%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 31 replicas
+Average CPU: 41.4%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 36 replicas
+Average CPU: 51.6%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 41 replicas
+Average CPU: 59.1%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 46 replicas
+Average CPU: 69.3%	 Average memory: 29.0%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 51 replicas
+Average CPU: 68.3%	 Average memory: 29.2%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-a to 56 replicas
+Average CPU: 80.6%	 Average memory: 29.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 56
+Average CPU: 86.7%	 Average memory: 29.6%
+decreasing number of replicas by 4
+Successfully scaled deployment get-tests-a to 52 replicas
+Average CPU: 78.5%	 Average memory: 29.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 52
+Average CPU: 80.3%	 Average memory: 29.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 52
+Average CPU: 82.1%	 Average memory: 29.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 52
+Average CPU: 79.1%	 Average memory: 29.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 52
+Average CPU: 76.8%	 Average memory: 29.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 52

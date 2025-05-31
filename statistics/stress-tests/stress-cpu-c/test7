@@ -1,0 +1,41 @@
+cluster> start
+Creating deployment...
+Created deployment "stress-cpu-c".
+
+cluster> Average CPU: 76.1%	 Average memory: 17.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.0%	 Average memory: 22.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.3%	 Average memory: 23.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.6%	 Average memory: 23.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.5%	 Average memory: 22.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 20.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 18.0%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 17.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 19.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.6%	 Average memory: 21.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 20.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+Average CPU: 76.4%	 Average memory: 17.0%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 1
+

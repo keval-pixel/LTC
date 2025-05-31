@@ -1,0 +1,42 @@
+cluster> start
+Creating deployment...
+Created deployment "gerrit-realistic-a".
+
+cluster> Average CPU: 14.6%	 Average memory: 23.9%
+Increasing number of replicas by 4
+Successfully scaled deployment gerrit-realistic-a to 5 replicas
+Average CPU: 57.0%	 Average memory: 18.4%
+Increasing number of replicas by 2
+Successfully scaled deployment gerrit-realistic-a to 7 replicas
+Average CPU: 67.0%	 Average memory: 19.0%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 8 replicas
+Average CPU: 53.0%	 Average memory: 19.1%
+Increasing number of replicas by 4
+Successfully scaled deployment gerrit-realistic-a to 12 replicas
+Average CPU: 72.9%	 Average memory: 22.6%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 13 replicas
+Average CPU: 78.7%	 Average memory: 23.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 13
+Average CPU: 69.4%	 Average memory: 24.6%
+Increasing number of replicas by 1
+Successfully scaled deployment gerrit-realistic-a to 14 replicas
+Average CPU: 81.5%	 Average memory: 25.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 14
+Average CPU: 81.4%	 Average memory: 26.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 14
+Average CPU: 78.4%	 Average memory: 26.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 14
+Average CPU: 77.0%	 Average memory: 26.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 14
+
+cluster> stop
+stopping test deployment...
+Deployment gerrit-realistic-a deleted successfully
+

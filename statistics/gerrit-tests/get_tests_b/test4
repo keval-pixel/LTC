@@ -1,0 +1,55 @@
+cluster> start
+Creating deployment...
+Created deployment "get-tests-b".
+Average CPU: 4.2%	 Average memory: 28.7%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-b to 6 replicas
+Average CPU: 4.2%	 Average memory: 28.7%
+Increasing number of replicas by 5
+Warning: Unable to update replicas to 11. Pending replicas to be deployed are: 5
+Number of replicas running is 1
+Average CPU: 14.1%	 Average memory: 28.7%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-b to 11 replicas
+Average CPU: 39.5%	 Average memory: 28.7%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-b to 16 replicas
+Average CPU: 41.3%	 Average memory: 28.7%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-b to 21 replicas
+Average CPU: 48.1%	 Average memory: 28.7%
+Increasing number of replicas by 5
+Successfully scaled deployment get-tests-b to 26 replicas
+Average CPU: 90.1%	 Average memory: 29.1%
+decreasing number of replicas by 2
+Successfully scaled deployment get-tests-b to 24 replicas
+Average CPU: 85.8%	 Average memory: 29.4%
+decreasing number of replicas by 1
+Successfully scaled deployment get-tests-b to 23 replicas
+Average CPU: 84.1%	 Average memory: 29.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 23
+Average CPU: 85.5%	 Average memory: 29.8%
+decreasing number of replicas by 1
+Successfully scaled deployment get-tests-b to 22 replicas
+Average CPU: 81.3%	 Average memory: 29.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 22
+Average CPU: 83.2%	 Average memory: 29.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 22
+Average CPU: 80.7%	 Average memory: 29.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 22
+Average CPU: 79.5%	 Average memory: 29.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 22
+Average CPU: 83.4%	 Average memory: 29.9%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 22
+Average CPU: 83.3%	 Average memory: 29.9%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 22
+stop
+stopping test deployment...
+Deployment get-tests-b deleted successfully

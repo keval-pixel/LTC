@@ -1,0 +1,41 @@
+cluster> start
+Creating deployment...
+Created deployment "stress-cpu-b".
+
+cluster> Average CPU: 38.1%	 Average memory: 13.9%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-cpu-b to 2 replicas
+Average CPU: 72.2%	 Average memory: 19.2%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-cpu-b to 3 replicas
+Average CPU: 97.2%	 Average memory: 28.4%
+decreasing number of replicas by 1
+Successfully scaled deployment stress-cpu-b to 2 replicas
+Average CPU: 77.7%	 Average memory: 20.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 19.5%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 19.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 20.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 20.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.3%	 Average memory: 20.1%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.4%	 Average memory: 20.5%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 20.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 76.5%	 Average memory: 20.2%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+
