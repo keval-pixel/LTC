@@ -1,0 +1,64 @@
+# 2
+Select the metric to be monitored on the target server [CPU/Memory]: memory
+Select the target memory utilization [1-100]%: 70
+Select the feedback time in seconds [10-60]: 15
+Run on Kubernetes or K6 [default: K6]: kubernetes
+Provide a deployment name: stress-memory-c
+Provide the container image: kevalvisnu/k6:memory_tests_c
+Press enter to start the test
+
+Creating deployment...
+Created deployment "stress-memory-c".
+
+Starting stress-memory-c cluster Test. Available commands are:
+1.start
+2.status <optional: pod_name>
+3.increase <optional: increase_step>
+4.decrease <optional: decrease_step>
+5.stop
+6.exit
+
+Average CPU: 100.0%	 Average memory: 50.3%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 2 replicas
+Average CPU: 100.0%	 Average memory: 62.6%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 3 replicas
+Average CPU: 100.0%	 Average memory: 71.6%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 72.9%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 74.2%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 74.1%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 72.3%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 75.9%
+decreasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 2 replicas
+Average CPU: 100.0%	 Average memory: 65.8%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 2
+Average CPU: 100.0%	 Average memory: 64.2%
+Increasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 3 replicas
+Average CPU: 100.0%	 Average memory: 71.3%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 73.0%
+memory utilization beween 65.0% and 75.0%
+Number of replicas is 3
+Average CPU: 100.0%	 Average memory: 81.9%
+decreasing number of replicas by 1
+Successfully scaled deployment stress-memory-c to 2 replicas
+
+cluster> stop
+stopping test deployment...
+Deployment stress-memory-c deleted successfully
+

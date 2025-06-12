@@ -1,0 +1,62 @@
+# 2
+Select the metric to be monitored on the target server [CPU/Memory]: cpu
+Select the target cpu utilization [1-100]%: 80
+Select the feedback time in seconds [10-60]: 15
+Run on Kubernetes or K6 [default: K6]: kubernetes
+Provide a deployment name: get-tests-b
+Provide the container image: kevalvisnu/k6:get_tests_b
+Press enter to start the test
+
+Creating deployment...
+Created deployment "kget-tests-b".
+
+Starting kget-tests-b cluster Test. Available commands are:
+1.start
+2.status <optional: pod_name>
+3.increase <optional: increase_step>
+4.decrease <optional: decrease_step>
+5.stop
+6.exit
+
+
+cluster> Average CPU: 13.6%	 Average memory: 12.2%
+Increasing number of replicas by 4
+Successfully scaled deployment kget-tests-b to 5 replicas
+Average CPU: 22.3%	 Average memory: 12.4%
+Increasing number of replicas by 5
+Successfully scaled deployment kget-tests-b to 10 replicas
+Average CPU: 38.5%	 Average memory: 12.6%
+Increasing number of replicas by 5
+Successfully scaled deployment kget-tests-b to 15 replicas
+Average CPU: 52.7%	 Average memory: 14.9%
+Increasing number of replicas by 5
+Successfully scaled deployment kget-tests-b to 20 replicas
+Average CPU: 58.0%	 Average memory: 20.0%
+Increasing number of replicas by 5
+Successfully scaled deployment kget-tests-b to 25 replicas
+Average CPU: 75.1%	 Average memory: 23.3%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 25
+Average CPU: 78.0%	 Average memory: 25.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 25
+Average CPU: 79.3%	 Average memory: 26.5%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 25
+Average CPU: 78.6%	 Average memory: 26.7%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 25
+Average CPU: 77.1%	 Average memory: 26.8%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 25
+Average CPU: 78.6%	 Average memory: 27.0%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 25
+Average CPU: 74.6%	 Average memory: 27.6%
+Increasing number of replicas by 1
+Successfully scaled deployment kget-tests-b to 26 replicas
+
+cluster> stop
+stopping test deployment...
+Deployment kget-tests-b deleted successfully
+
