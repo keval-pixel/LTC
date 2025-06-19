@@ -1,0 +1,39 @@
+cluster> Average CPU: 45.0%	 Average memory: 14.6%
+Increasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 2 replicas
+Average CPU: 67.4%	 Average memory: 17.0%
+Increasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 3 replicas
+Average CPU: 86.5%	 Average memory: 19.3%
+decreasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 2 replicas
+Average CPU: 70.5%	 Average memory: 17.5%
+Increasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 3 replicas
+Average CPU: 85.5%	 Average memory: 19.1%
+decreasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 2 replicas
+Average CPU: 78.1%	 Average memory: 18.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 2
+Average CPU: 69.3%	 Average memory: 17.9%
+Increasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 3 replicas
+Average CPU: 85.0%	 Average memory: 19.2%
+decreasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 2 replicas
+Average CPU: 69.2%	 Average memory: 18.6%
+Increasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 3 replicas
+Average CPU: 86.3%	 Average memory: 20.1%
+decreasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 2 replicas
+Average CPU: 61.0%	 Average memory: 17.8%
+Increasing number of replicas by 1
+Successfully scaled deployment realistic-test-c to 3 replicas
+Average CPU: 78.4%	 Average memory: 18.6%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 3
+Average CPU: 80.5%	 Average memory: 19.4%
+cpu utilization beween 75.0% and 85.0%
+Number of replicas is 3
